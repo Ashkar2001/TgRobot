@@ -4,12 +4,12 @@
 
 
  
-You can also [Find me on Telegram](http://t.me/AmTheRobot)
+You can also [Find me on Telegram](http://telegram.dog/AmTheRobot)
 
 
 
 
-[![TgRobot](https://telegra.ph/file/72b6a2032bd19642ff759.jpg)]
+[![TgRobot](https://telegra.ph/file/cf2c325fd2ba4996efd50.jpg)]
 
 
 ### Installation
