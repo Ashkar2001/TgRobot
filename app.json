@@ -16,7 +16,7 @@
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
-         "value": ""
+         "value": "CAACAgUAAxkBAAEEo0Zev971fHTvtNwo3TgAAcNhvAABPuByAAIHAAMiQekrRGBFpBTEEP0ZBA"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -33,11 +33,11 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "x_y_x"
+         "value": ""
       },
       "OWNER_USERNAME": {
          "description": "Your username",
-         "value": "x_y_z"
+         "value": ""
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
@@ -115,7 +115,7 @@
       "manager",
       "bot"
    ],
-   "logo": "https://telegra.ph/file/72b6a2032bd19642ff759.jpg",
-   "name": "phantom",
+   "logo": "https://telegra.ph/file/cf2c325fd2ba4996efd50.jpg",
+   "name": "TgRobot",
    "repository": "https://github.com/leobrownlee/phantom"
 }
