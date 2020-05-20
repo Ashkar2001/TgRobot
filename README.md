@@ -4,7 +4,7 @@
 
 
  
-You can also [Find me on Telegram](http://telegram.dog/AmTheRobot)
+***You can also [Find me on Telegram](http://telegram.dog/AmTheRobot)
 
 
 
@@ -12,7 +12,7 @@ You can also [Find me on Telegram](http://telegram.dog/AmTheRobot)
 [![TgRobot](https://telegra.ph/file/cf2c325fd2ba4996efd50.jpg)]
 
 
-### Installation
+## Installation
 
 Simplest method is to Deploy Me in heroku🤗.
 
