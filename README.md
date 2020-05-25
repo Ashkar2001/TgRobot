@@ -51,6 +51,11 @@ from tg_bot.sample_config import Config
 class Development(Config):
     OWNER_ID = 736706850  # my telegram ID
     OWNER_USERNAME = "Charlie_jin"  # my telegram username
+    CASH_API_KEY = None # Get one from https://www.alphavantage.co/support/#api-key
+    TIME_API_KEY = None # Get one from https://timezonedb.com/register
+    API_OPENWEATHER = False #Get API_OPENWEATHER FROM OFFICAL SITE https://da.gd/VAW3
+    AI_API_KEY = None # Coffeehouse chatbot api key, get one from https://coffeehouse.intellivoid.info/
+    WALL_API = None # Get one from https://wall.alphacoders.com/api.php
     API_KEY = "your bot api key"  # my api key, as provided by the botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
@@ -63,9 +68,12 @@ class Development(Config):
 If you can't have a config.py file (EG on heroku), it is also possible to use environment variables.
 The following env variables are supported:
  - `ENV`: Setting this to ANYTHING will enable env variables
- - `AI API`: Generate AI-api key from https://coffeehouse.intellivoid.net/
- - `WEATHER API`: Generate weather api from https://openweather.co.uk/
- - `CASH API`: Already seted to default.
+
+ - `CASH_API_KEY`:Get one from https://www.alphavantage.co/support/#api-key
+ - `TIME_API_KEY`:Get one from https://timezonedb.com/register
+ - `API_OPENWEATHER`:Get API_OPENWEATHER FROM OFFICAL SITE https://da.gd/VAW3
+ - `AI_API_KEY`:Coffeehouse chatbot api key, get one from https://coffeehouse.intellivoid.info/
+ - `WALL_API`:Get one from https://wall.alphacoders.com/api.php
 
  - `TOKEN`: Your bot token, as a string.
  - `OWNER_ID`: An integer of consisting of your owner ID
