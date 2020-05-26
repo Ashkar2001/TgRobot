@@ -35,7 +35,7 @@ from tg_bot.modules.helper_funcs.alternate import send_message
 #
 # Total spended for making this features is 68+ hours
 
-LOGGER.info("@AnonymousD3061")
+LOGGER.info("@Charlie_jin")
 
 
 FBAN_ERRORS = {
@@ -83,7 +83,7 @@ def new_fed(bot: Bot, update: Update):
 
         x = sql.new_fed(user.id, fed_name, fed_id)
         if not x:
-            update.effective_message.reply_text("Failed to create federation! Head over to @AnonymousD3061 to notify us of the error.")
+            update.effective_message.reply_text("Failed to create federation! Head over to @Charlie_jin to notify us of the error.")
             return
 
         update.effective_message.reply_text("*You have successfully created a new federation!*"\
@@ -187,7 +187,7 @@ def join_fed(bot: Bot, update: Update, args: List[str]):
 
         x = sql.chat_join_fed(fedd, chat.id)
         if not x:
-                message.reply_text("Failed to join federation! Please head to @AnonymousD3061 to report this.")
+                message.reply_text("Failed to join federation! Please head to @Charlie_jin to report this.")
                 return
 
         message.reply_text("Chat successfully added to federation!")
@@ -451,7 +451,7 @@ def fed_ban(bot: Bot, update: Update, args: List[str]):
             return
         x = sql.fban_user(fed_id, user_id, user_chat.first_name, user_chat.last_name, user_chat.username, reason)
         if not x:
-            message.reply_text("Failed to ban from the federation! If this problem persists, reach out to us @AnonymousD3061.")
+            message.reply_text("Failed to ban from the federation! If this problem persists, reach out to us @Charlie_jin.")
             return
 
         fed_chats = sql.all_fed_chats(fed_id)
@@ -490,7 +490,7 @@ def fed_ban(bot: Bot, update: Update, args: List[str]):
 
     x = sql.fban_user(fed_id, user_id, user_chat.first_name, user_chat.last_name, user_chat.username, reason)
     if not x:
-        message.reply_text("Failed to ban from the federation! If this problem persists, reach out to us @AnonymousD3061.")
+        message.reply_text("Failed to ban from the federation! If this problem persists, reach out to us @Charlie_jin.")
         return
 
     fed_chats = sql.all_fed_chats(fed_id)
@@ -636,7 +636,7 @@ def set_frules(bot: Bot, update: Update, args: List[str]):
             markdown_rules = markdown_parser(txt, entities=msg.parse_entities(), offset=offset)
         x = sql.set_frules(fed_id, markdown_rules)
         if not x:
-            update.effective_message.reply_text("Failed to set federation rules. If this persists, reach out to us @AnonymousD3061.")
+            update.effective_message.reply_text("Failed to set federation rules. If this persists, reach out to us @Charlie_jin.")
             return
 
         rules = sql.get_fed_info(fed_id)['frules']
